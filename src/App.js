@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+import React from 'react';
+
 import './App.css';
+import PageHeader from './components/PageHeader';
+import SideMenu from './components/SideMenu';
+import SearchData from './components/SearchData';
 
 function App() {
+
+  const [data, setData] = React.useState({});
+  
+  // console.log("Data", data);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container-fluid">
+      <div className="d-flex justify-content-center">
+        <PageHeader/>
+      </div>
+
+      <div className="row">
+        <div className="col-sm-12 col-md-12 col-lg-4 mb-3">
+          <SideMenu setData={setData}/>
+        </div>
+        
+        <div className="col-sm-12 col-md-12 col-lg-8 mb-3">
+          <SearchData data={data}/>
+        </div>
+      </div>
     </div>
   );
 }
