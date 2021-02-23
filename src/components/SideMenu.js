@@ -170,7 +170,7 @@ export default function SideMenu(props) {
                                         min={1000}
                                         max={11000}
                                         onChange={(e, v) => setData({...data, price_range: v})}
-                                        valueLabelDisplay="on"
+                                        // valueLabelDisplay="on"
                                     />
                                 </CardContent>
                             </Card>
@@ -191,7 +191,7 @@ export default function SideMenu(props) {
                 <div className="row">
                     <form noValidate autoComplete="off" className={classes.root}>
                         <div className="form-group">
-                            <TextField id="standard-basic" label="Enter origin city" type="text" value={origin} onChange={handleFormChange('origin')} fullWidth required/>
+                            <TextField id="standard-basic" label="Enter origin city" value={origin} onChange={handleFormChange('origin')} fullWidth required/>
                         </div>
                         <div className="form-group">
                             <TextField id="standard-basic" label="Enter desination city" value={destination} onChange={handleFormChange('destination')} fullWidth required/>
@@ -256,7 +256,7 @@ export default function SideMenu(props) {
                                         max={11000}
                                         required
                                         onChange={(e, v) => setData({...data, price_range: v})}
-                                        valueLabelDisplay="on"
+                                        // valueLabelDisplay="on"
                                     />
                                 </CardContent>
                             </Card>
