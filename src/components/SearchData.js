@@ -98,6 +98,9 @@ export default function SearchData({data}) {
                                                                                     {data.origin} -&gt; {data.destination} <br/>
                                                                                 </div>
                                                                             </div>
+                                                                            <div className="row">
+                                                                                <div className="col text-muted">{data.flight_no}</div>
+                                                                            </div>
 
                                                                             <div className="row">
                                                                                 <div className="col-sm-12">
@@ -155,7 +158,9 @@ export default function SearchData({data}) {
                                                                                     {data.origin} -&gt; {data.destination} <br/>
                                                                                 </div>
                                                                             </div>
-
+                                                                            <div className="row">
+                                                                                <div className="col text-muted">{data.flight_no}</div>
+                                                                            </div>
                                                                             <div className="row">
                                                                                 <div className="col-12" style={{width: '100%'}}>
                                                                                     Departure Time : <br/> <b>{data.dep_date} - {data.dep_time}</b> <br/> <br/>
@@ -213,7 +218,9 @@ export default function SearchData({data}) {
                                                                                     {data.origin} -&gt; {data.destination} <br/>
                                                                                 </div>
                                                                             </div>
-
+                                                                            <div className="row">
+                                                                                <div className="col text-muted">{data.flight_no}</div>
+                                                                            </div>
                                                                             <div className="row">
                                                                                 <div className="col-12" style={{width: '100%'}}>
                                                                                     Departure Time : <br/> <b>{data.dep_date} - {data.dep_time}</b> <br/> <br/>
@@ -266,7 +273,9 @@ export default function SearchData({data}) {
                                                                                     {data.origin} -&gt; {data.destination} <br/>
                                                                                 </div>
                                                                             </div>
-
+                                                                            <div className="row">
+                                                                                <div className="col text-muted">{data.flight_no}</div>
+                                                                            </div>
                                                                             <div className="row">
                                                                                 <div className="col-12" style={{width: '100%'}}>
                                                                                     Departure Time : <br/> <b>{data.dep_date} - {data.dep_time}</b> <br/> <br/>

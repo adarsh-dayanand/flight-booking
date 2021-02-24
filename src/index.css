@@ -34,4 +34,8 @@ code {
     margin-top: -30%;
     margin-bottom: 20%;
   }
+
+  .custom-heading{
+    font-size: 22px;
+  }
 }
